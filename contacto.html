@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ginebra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+  background-color: #f8efe6;
+  color: #000;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+header {
+  background-color: #f4c2c2;
+  padding: 15px 0;
+  border-bottom: 3px solid goldenrod;
+  text-align: center;
+}
+
+/* NAV más grande */
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+header ul li a:hover {
+  color: goldenrod;
+}
+
+/* Título */
+h1 {
+  color: goldenrod;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Caja de contacto */
+.contact-box {
+  max-width: 600px;
+  width: 95%;
+  margin: 40px auto;
+  background: #fff8f2;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid goldenrod;
+  text-align: center;
+}
+
+/* Botones */
+.btn-ginebra {
+  border-color: #c77a7a;
+  color: #c77a7a;
+  font-size: 1.2rem;
+  padding: 12px;
+}
+.btn-ginebra:hover {
+  background-color: #c77a7a;
+  color: white;
+}
+
+/* Texto revelado */
+.info {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header ul li a {
+    font-size: 1.1rem;
+  }
+
+  .btn-ginebra {
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .info {
+    font-size: 1.2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="pedidos.html">Pedidos</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<h1>Contacto</h1>
+
+<div class="container">
+<div class="contact-box">
+
+<button class="btn btn-outline-danger btn-ginebra" onclick="mostrar('tel')">Teléfono</button>
+<div id="tel" class="info">55 1234 5678</div>
+
+<button class="btn btn-outline-danger btn-ginebra mt-3" onclick="mostrar('correo')">Correo</button>
+<div id="correo" class="info">contacto@ginebra.com</div>
+
+<button class="btn btn-outline-danger btn-ginebra mt-3" onclick="mostrar('dir')">Dirección</button>
+<div id="dir" class="info">
+  CDMX, México
+  <br><br>
+  
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0880258234887!2d-99.1676620257361!3d19.411713042711368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff359bf7aaab%3A0xf6043788c5f5ad15!2sÁngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1701312345678"
+    width="100%" height="250"
+    style="border:0; border-radius:10px; margin-top:10px;"
+    allowfullscreen loading="lazy"></iframe>
+</div>
+
+</div>
+</div>
+
+<script>
+function mostrar(id) {
+  var elemento = document.getElementById(id);
+  elemento.style.display = elemento.style.display === "block" ? "none" : "block";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

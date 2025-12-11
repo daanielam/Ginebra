@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ginebra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+  background-color: #f8efe6;
+  color: #000;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* Limitar el ancho para que no se vea tan pequeño en celular */
+.container {
+  max-width: 95%;
+}
+
+/* Mejorar tipografía para celular */
+h1, h4 {
+  color: goldenrod;
+  line-height: 1.2;
+}
+
+/* NAVBAR más grande en teléfono */
+.nav-link {
+  font-size: 1.1rem;
+}
+
+/* Imagen responsiva */
+img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+/* Botones más grandes */
+.btn {
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+/* Tabla responsiva */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Ajustes específicos para móvil */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  table th, table td {
+    font-size: 1.1rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#f4c2c2; border-bottom:3px solid goldenrod;">
+<div class="container-fluid">
+  <a class="navbar-brand fw-bold" href="#" style="color:black;">Ginebra</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="pedidos.html">Pedidos</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="menu.html">Menu</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="nosotros.html">Nosotros</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+</header>
+
+<div class="container mt-4">
+
+<h1>GINEBRA</h1>
+<h4>Joyería</h4>
+
+<div class="row mt-4 g-4">
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <button class="btn btn-outline-dark w-100" data-bs-toggle="collapse" data-bs-target="#bienvenida">Bienvenida</button>
+    <div class="collapse mt-3" id="bienvenida">
+      <div class="card card-body">
+        <p>Bienvenide a Ginebra Joyería.</p>
+        <img src="Ginebra.jpg" alt="joyería ginebra" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <button class="btn btn-outline-dark w-100" data-bs-toggle="collapse" data-bs-target="#marcas">Marcas favoritas</button>
+    <div class="collapse mt-3" id="marcas">
+      <div class="card card-body">
+        <h4>Inspiraciones</h4>
+        <a href="https://www.cartier.mx" target="_blank">Cartier</a><br>
+        <a href="https://www.tous.com" target="_blank">Tous</a><br>
+        <a href="https://www.swarovski.com" target="_blank">Swarovski</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <button class="btn btn-outline-dark w-100" data-bs-toggle="collapse" data-bs-target="#categorias">Categorías</button>
+    <div class="collapse mt-3" id="categorias">
+      <div class="card card-body">
+        <ul class="list-unstyled">
+          <li>Aretes</li>
+          <li>Anillos</li>
+          <li>Collares</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-outline-dark w-100" data-bs-toggle="collapse" data-bs-target="#tablaProductos">Productos y precios</button>
+    <div class="collapse mt-3" id="tablaProductos">
+      <div class="card card-body table-responsive">
+        <table class="table table-bordered">
+          <thead class="table-warning">
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aretes</td><td>$460</td><td>20</td></tr>
+            <tr><td>Collar</td><td>$300</td><td>12</td></tr>
+            <tr><td>Anillos</td><td>$260</td><td>18</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
